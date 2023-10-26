@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RajeshWithDependency_Example' do
+  pod 'RajeshWithDependency', :path => '../'
+
+  target 'RajeshWithDependency_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
