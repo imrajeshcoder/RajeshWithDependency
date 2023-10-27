@@ -22,7 +22,7 @@ pod 'RajeshWithDependency'
 
 ## Author
 
-imrajeshcoder, rajesh.s@vrinsoft.com
+imrajeshcoder, imrajesh.coder@gmail.com
 
 ## License
 

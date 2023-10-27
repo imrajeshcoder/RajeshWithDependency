@@ -1,0 +1,6 @@
+framework module Pods_RajeshWithDependency_Tests {
+  umbrella header "Pods-RajeshWithDependency_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -29,9 +29,9 @@
 
 /* Begin PBXFileReference section */
 		088D2612DE643F0CBF49B32A /* Pods-RajeshWithDependency_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajeshWithDependency_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RajeshWithDependency_Tests/Pods-RajeshWithDependency_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1BD57FABEB21DB8690F7CE3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1BD57FABEB21DB8690F7CE3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		20837E7A402B837C51B0ABCA /* Pods-RajeshWithDependency_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajeshWithDependency_Tests.release.xcconfig"; path = "Target Support Files/Pods-RajeshWithDependency_Tests/Pods-RajeshWithDependency_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		46A1F37576064A97841E2611 /* RajeshWithDependency.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RajeshWithDependency.podspec; path = ../RajeshWithDependency.podspec; sourceTree = "<group>"; };
+		46A1F37576064A97841E2611 /* RajeshWithDependency.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RajeshWithDependency.podspec; path = ../RajeshWithDependency.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49D79CB366DE52D984483F08 /* Pods_RajeshWithDependency_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RajeshWithDependency_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* RajeshWithDependency_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RajeshWithDependency_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* RajeshWithDependency_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RajeshWithDependency_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		70CA86B4E9DC73459804051E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		70CA86B4E9DC73459804051E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		87E6598BADB3FCEF37028EE7 /* Pods-RajeshWithDependency_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajeshWithDependency_Example.debug.xcconfig"; path = "Target Support Files/Pods-RajeshWithDependency_Example/Pods-RajeshWithDependency_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C3441914CB8FCFEAFB2F035C /* Pods_RajeshWithDependency_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RajeshWithDependency_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8A818A09B5DE2FE779D002 /* Pods-RajeshWithDependency_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajeshWithDependency_Example.release.xcconfig"; path = "Target Support Files/Pods-RajeshWithDependency_Example/Pods-RajeshWithDependency_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				088D2612DE643F0CBF49B32A /* Pods-RajeshWithDependency_Tests.debug.xcconfig */,
 				20837E7A402B837C51B0ABCA /* Pods-RajeshWithDependency_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +314,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RajeshWithDependency_Example/Pods-RajeshWithDependency_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RajeshWithDependency/RajeshWithDependency.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RajeshWithDependency.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

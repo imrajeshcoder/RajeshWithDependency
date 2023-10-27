@@ -1,0 +1,6 @@
+framework module RajeshWithDependency {
+  umbrella header "RajeshWithDependency-umbrella.h"
+
+  export *
+  module * { export * }
+}

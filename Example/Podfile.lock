@@ -1,0 +1,25 @@
+PODS:
+  - RajeshWithDependency (0.1.0):
+    - SDWebImage
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
+
+DEPENDENCIES:
+  - RajeshWithDependency (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  RajeshWithDependency:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RajeshWithDependency: 20df50e736e16331269769f5449ec89be51c01f2
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+
+PODFILE CHECKSUM: 30699dfc010459d16083cd56dc6e87985f7d9686
+
+COCOAPODS: 1.13.0
